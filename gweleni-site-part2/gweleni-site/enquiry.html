@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Quote | Gweleni Construction</title>
+<meta name="description" content="Request a free quote from Gweleni Construction for your building, renovation or roofing project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true">G</span>
+      <span class="logo-text">GWELENI<span class="logo-sub">CONSTRUCTION</span></span>
+    </a>
+
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="enquiry.html" class="btn btn-gold nav-cta">Request a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Quote request form, with a short explanation of what happens next.
+       This is the site's one form (see the note on contact.html) — every
+       "Get a Quote" / "Request a Free Quote" link across the site points
+       here rather than to contact.html. -->
+  <section class="contact" id="enquiry">
+    <div class="section-inner contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow">Get In Touch</p>
+        <h1>Request a quote</h1>
+        <p>Tell us about your project and we&rsquo;ll get back to you with next steps. For
+          renovations, please include rough dimensions or upload a plan below if you have one.</p>
+        <p>Once we receive your request, we&rsquo;ll contact you to confirm the details and, where
+          needed, arrange a site visit before putting together your written quote.</p>
+      </div>
+
+      <!-- Native HTML5 validation (required, type="email", type="tel") does
+           the field checking here instead of custom JavaScript. Each field
+           has a proper <label for="..."> for screen-reader support, and
+           form-row-split lays name/email side by side on wider screens,
+           stacking to one column on mobile (see .form-row-split in the
+           responsive CSS on index.html). -->
+      <form class="quote-form" action="#" method="post">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="form-row form-row-split">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="service">Service needed</label>
+          <select id="service" name="service">
+            <option value="new-build">Residential new build</option>
+            <option value="kitchen">Kitchen renovation</option>
+            <option value="bathroom">Bathroom renovation</option>
+            <option value="extension">Home extension</option>
+            <option value="roofing">Roofing</option>
+            <option value="commercial">Commercial fit-out</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="plan">Upload a plan or reference photo (optional)</label>
+          <input type="file" id="plan" name="plan" accept="image/*,.pdf">
+        </div>
+
+        <div class="form-row">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-full">Send Request</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark" aria-hidden="true">G</span>
+      <div>
+        <p class="footer-name">Gweleni Construction</p>
+        <p class="footer-tag">Building &amp; renovation, Bellville &amp; Cape Town</p>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="enquiry.html">Get a Quote</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="footer-contact">
+      <a href="tel:+27699954854">+27 69 995 4854</a>
+      <a href="mailto:nokhayasingatha3@gmail.com">nokhayasingatha3@gmail.com</a>
+      <span>318 Ridgeworth, Bellville, Cape Town</span>
+    </div>
+  </div>
+  <p class="footer-stamp">DRAWING NO. GC&ndash;2026&ndash;01 &middot; &copy; 2026 Gweleni Construction</p>
+</footer>
+
+</body>
+</html>

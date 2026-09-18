@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Gweleni Construction</title>
+<meta name="description" content="Residential new builds, kitchen and bathroom renovations, home extensions, roofing and commercial fit-outs from Gweleni Construction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true">G</span>
+      <span class="logo-text">GWELENI<span class="logo-sub">CONSTRUCTION</span></span>
+    </a>
+
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="enquiry.html" class="btn btn-gold nav-cta">Request a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Full services list: six categories, each backed by a real project photo -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <p class="eyebrow">What We Do</p>
+      <h1>Services</h1>
+      <p class="section-lead">Six service lines cover everything from a single home renovation to
+        a full commercial fit-out, all managed by the same team from quote to handover.</p>
+
+      <!-- Each service is an <article> because it's a self-contained unit
+           (image + heading + description) that would still make sense if
+           pulled out and shown on its own, e.g. shared or listed elsewhere.
+           Images use loading="lazy" since they're below the fold on load,
+           and each alt text names both the work shown and its location to
+           double as descriptive, locally-relevant content, not just an
+           accessibility fallback. -->
+      <div class="service-tiles">
+        <article class="service-tile">
+          <img src="images/new-home-build.png" alt="New double-storey home under construction in Durbanville" loading="lazy">
+          <div class="service-tile-body">
+            <h2>Residential New Builds</h2>
+            <p>New house construction and second dwellings, managed from foundation to final
+              coat for homeowners across the northern suburbs.</p>
+          </div>
+        </article>
+
+        <article class="service-tile">
+          <img src="images/kitchen-renovation.png" alt="Renovated white kitchen with under-cabinet lighting in Bellville" loading="lazy">
+          <div class="service-tile-body">
+            <h2>Kitchen Renovations</h2>
+            <p>Full kitchen remodels &mdash; layout changes, cabinetry, worktops and fittings
+              &mdash; completed with minimal disruption to your home.</p>
+          </div>
+        </article>
+
+        <article class="service-tile">
+          <img src="images/bathroom-renovation.png" alt="Renovated bathroom with glass shower and wooden-framed mirror in Brackenfell" loading="lazy">
+          <div class="service-tile-body">
+            <h2>Bathroom Renovations</h2>
+            <p>Bathroom remodels from a simple refresh to a full re-layout, including tiling,
+              waterproofing and fittings.</p>
+          </div>
+        </article>
+
+        <article class="service-tile">
+          <img src="images/home-extension.png" alt="Home extension under construction with roof trusses in Tyger Valley" loading="lazy">
+          <div class="service-tile-body">
+            <h2>Home Extensions</h2>
+            <p>Second-storey additions, room extensions and granny flats, planned around your
+              existing home and municipal requirements.</p>
+          </div>
+        </article>
+
+        <article class="service-tile">
+          <img src="images/roof-replacement.png" alt="Roofing team replacing shingles on a residential roof in Parow" loading="lazy">
+          <div class="service-tile-body">
+            <h2>Roofing Services</h2>
+            <p>Roof replacement, repairs and waterproofing for residential and light-commercial
+              buildings.</p>
+          </div>
+        </article>
+
+        <article class="service-tile">
+          <img src="images/retail-fitout.png" alt="Completed retail store interior fit-out in Century City" loading="lazy">
+          <div class="service-tile-body">
+            <h2>Commercial &amp; Retail Fit-Outs</h2>
+            <p>Interior fit-outs and alterations for small commercial and retail spaces, from
+              shelving and lighting to final finishes.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ section: common questions, using the semantic <details>/<summary>
+       disclosure elements. This gives working expand/collapse behaviour for
+       free, with no JavaScript and no extra ARIA attributes needed, because
+       the browser handles the open/closed state and keyboard interaction
+       natively. -->
+  <section class="about" id="faq">
+    <div class="section-inner">
+      <p class="eyebrow">Good to Know</p>
+      <h2>Frequently asked questions</h2>
+
+      <details>
+        <summary>Which areas do you work in?</summary>
+        <p>We are based in Bellville and mainly work across Cape Town&rsquo;s northern suburbs,
+          including Durbanville, Brackenfell, Parow, Tyger Valley and Century City.</p>
+      </details>
+
+      <details>
+        <summary>Do you provide free quotes?</summary>
+        <p>Yes. Send us your project details through the <a href="enquiry.html">quote request
+          page</a> and we will get back to you with next steps.</p>
+      </details>
+
+      <details>
+        <summary>How long does a typical renovation take?</summary>
+        <p>It depends on scope: a bathroom renovation usually takes two to three weeks, while a
+          kitchen renovation or home extension can take several weeks to a few months. We&rsquo;ll
+          give you a realistic timeline as part of your quote.</p>
+      </details>
+
+      <details>
+        <summary>Do you manage the whole project, or just the building work?</summary>
+        <p>We manage the full project &mdash; planning, scheduling and quality control &mdash;
+          from the initial quote through to handover, so you deal with one team throughout.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark" aria-hidden="true">G</span>
+      <div>
+        <p class="footer-name">Gweleni Construction</p>
+        <p class="footer-tag">Building &amp; renovation, Bellville &amp; Cape Town</p>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="enquiry.html">Get a Quote</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="footer-contact">
+      <a href="tel:+27699954854">+27 69 995 4854</a>
+      <a href="mailto:nokhayasingatha3@gmail.com">nokhayasingatha3@gmail.com</a>
+      <span>318 Ridgeworth, Bellville, Cape Town</span>
+    </div>
+  </div>
+  <p class="footer-stamp">DRAWING NO. GC&ndash;2026&ndash;01 &middot; &copy; 2026 Gweleni Construction</p>
+</footer>
+
+</body>
+</html>
